@@ -27,7 +27,7 @@ class AgenciesController < ApplicationController
     #largoHash = convertHash[0][1].length
             
     photos =     convertHash.flat_map do |o|
-                            o[1].flat_map do |w| #Segundo .map para tomar los valores individuales de "img_src"
+                            o[1].flat_map do |w|
                                 img_src = w["img_src"]
                                 img_src.split("\n")
                             end
