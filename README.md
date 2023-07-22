@@ -1,24 +1,4 @@
-# README
+# Notas para después:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Tener en el futuro los links no como formulario sino como variables de instancia o algo así.
+De forma de aprovechar esos datos en todo momento desde mi sitio
