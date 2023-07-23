@@ -1,12 +1,9 @@
 <div class="row">
     <div class="col-3">
         <%= form_tag my_create_pages_path, method: :post do %>
-          <%= label_tag :myinput, "Su API aquí", class: "form-label" %> <br>
+          <%= label_tag :myinput, "Su clave de imdb aquí", class: "form-label" %> <br>
           <%= text_field_tag :myinput, nil, class:"form-control" %>
           <%= submit_tag "Enviar", class:"btn btn-dark mt-4" %>
         <% end %>
     </div>
 </div>
-
-
-

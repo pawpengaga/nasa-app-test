@@ -1,3 +1,12 @@
-<% @pearl.each do |key , value| %>
-    <p><span class="fw-bold"><%= key %></span>: <%= value %></p> 
-<%end%>
+<div class="row">
+    <div class="col-4"><%= image_tag @moviedata["Poster"] ,class:"w-100" %></div>
+    
+    <div class="col-8">
+        <% @moviedata.each_with_index do |(key, value), index| %>
+          <% unless index == @moviedata.size - 1 %>
+            <p><span class="fw-bold"><%= @traducciones[key] %></span>: <%= value %></p> 
+          <% end %>
+        <% end %>
+        <%= link_to "Volver", pages_index_path, class:"btn btn-dark d-flex justify-content-center fw-bold py-2 mt-5 w-50 mx-auto" %>
+    </div>
+</div>
